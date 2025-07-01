@@ -1,0 +1,16 @@
+<idea-plugin>
+  <id>com.yourorg.issuebadge</id>
+  <name>IssueBadge</name>
+  <vendor>Your Name</vendor>
+  <description>Send IssueBadge badges from JetBrains IDE.</description>
+  <depends>com.intellij.modules.lang</depends>
+
+  <actions>
+    <action id="IssueBadge.Send"
+            class="com.yourorg.issuebadge.IssueBadgePlugin"
+            text="Send IssueBadge..."
+            description="Send a badge via IssueBadge API">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>
